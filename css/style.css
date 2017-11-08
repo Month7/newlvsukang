@@ -1,0 +1,104 @@
+@charset "utf-8";
+a{
+    text-decoration: none;
+}
+a:link,a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+/*====================================公共页面 头部================================*/
+.header{
+    height: 125px;
+}
+.header-top {
+    width: 80%;
+    margin: 5px auto;
+    display: flex;
+}
+.header-top a{
+    color: black;
+    font-size: 14px;
+}
+.header-top .messagel{
+   
+}
+.header-top .messager{
+   margin-left: 65%;
+   display: flex;
+}
+.header-nav{
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+.header-search{
+    height: 40px;
+    width: 722px;
+    background-color: orange;
+    margin-top: 20px;
+}
+.header-search input{
+    height: 38px;
+    margin: 1px;
+    width: 720px;
+}
+.header-searchButton{
+    margin-top:20px;
+    margin-left: 0px;
+    background-color: orange;
+    color: #fff;
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+    border: none;
+    float: left;
+}
+/*=======================================================================*/
+/*==============================轮播图===================================*/
+.nC-head{
+    background: #575655;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    padding: 0 13% 0 13%;
+}
+.carousel{
+    padding: 0 13% 0 13%;
+    background: #55BE59;
+}
+.nC-head .all-sort{
+    line-height: 40px;
+    color: #fff;
+    padding: 0 35px 0 35px;
+    height: 40px;
+    background: orange;
+    position: relative;
+}
+.nC-head a{
+    display: block;
+    padding: 0 25px 0 25px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+}
+.nC-head a:hover{
+    background: orange;
+}
+.dropMenu{
+    position: absolute;
+    width: 150px;
+    top:40px;
+    left: 0;
+    z-index: 1;
+    background: gray;
+}
+.dropMenu a{
+    color: black;
+    height: 45px;
+    line-height: 55px;
+}
+.dropMenu a:hover{
+    background: #fff;
+}
