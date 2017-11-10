@@ -129,4 +129,10 @@ $(function(){
         hideProduct(xid);
     });
     /*============================================================================================*/
+    var $height=$(".show-item").css("height");
+    var $width=$(".show-item").css("width");
+    $height=$height.replace(/px/,"");
+    $height/=2;
+    $(".show-content").css("height",$height+"px");
+    $(".show-content").css("width",$width);
 });

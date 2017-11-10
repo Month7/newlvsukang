@@ -278,7 +278,6 @@ div{
     display: block;
     color: black;
     padding: 3px;
- 
 }
 .myOrder{
     border: 1px solid gray;
@@ -345,16 +344,117 @@ div{
 .footer_child_right a:hover{
     color: yellow;
 }
-/*=========================================页脚==================================================*/
+/*=================================================页脚==========================================*/
+/*===============================================展示内容========================================*/
+.show-fish{
+    background: #CFEEF2;
+}
+.show-fruit{
+    background: #6BDEA7;
+}
+.show-rice{
+    background: #FEFFE0;
+}
+.show-title{
+    position: absolute;
+    width: 100%;
+    height: 128px;
+    top:30px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.show-text{
+    position: absolute;
+    text-align: center;
+    top:50%;
+    color: #fff;
+    width: 100%;
+}
+.show-title-circle{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    margin-top: 10px;
+    margin-left: 15px;
+    text-align: center;
+    line-height: 50px;
+}
+.show hr{
+    height: 3px;
+    background: black;
+}
+.show-item{
+    height: 500px;
+    width: 220px;
+    
+    position: relative;
+    float: left;
+}
+.show-angle{
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 0px;
+    height: 0px;
+    border: 20px solid #fff;
+    border-right: 20px solid #68937F;
+    border-top:20px solid #68937F;
+}
+.show .icon img{
+    width: 26px;
+    height: 26px;
+}
+.show .icon span{
+    display: block;
+    margin-bottom: -20px;
+}
+.show .icon span a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.show-content a{
+    color: black;
+}
+.show-item img{
+    width: 70%;
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    transition: all 0.8s;
+}
+.show-item img:hover{
+    transform: scale(1.1);
+}
+.show-content{
+    border: 1px solid #E4E4E4;
+    padding: 20px;
+    float: left;
+}
+.show-content .price-icon{
+    float: right;
+    font-size: 24px;
+    color: orange;
+}
+.show-content img{
+    width: 80%;
+    transition: all 0.8s;
+    transform: translateX(10px);
+}
+.show-content img:hover{
+    transform: translateX(-10px);
+}
+/*===============================================================================================*/
 .market-main{
     max-width: 1070px;
     margin: 20px auto;
     padding: 20px;
 }
 .container-special{
-    border: 1px solid rgb(255, 153, 0);
+    /* border: 1px solid rgb(255, 153, 0); */
     border-top: 3px solid rgb(255, 153, 0);
-    padding: 15px;
 }
 .market-first{
     padding: 10px;
@@ -530,6 +630,13 @@ div{
     background-color: orange;
 }
 /*=======================================今日推荐===================================*/
+.today{
+    padding: 0px;
+    margin:10px auto;
+}
+.today .row{
+    margin: 0px;
+}
 .today .title{
     background: rgb(47, 47, 47);
     color: #fff;
@@ -549,4 +656,43 @@ div{
 }
 .today .content img:hover{
     transform: translateX(-20px);
+}
+/*===================================促销专区=================================================*/
+.cuxiao{
+    margin-bottom: 10px;
+}
+.cuxiao img{
+    width: 100%;
+    height: 100%;
+}
+.cuxiao hr{
+    margin-top:0;
+    height: 3px;
+    background: black;
+}
+.cuxiao-main{
+    position: relative;
+    z-index: -1;
+}
+.triangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top:0;
+    border: 40px solid transparent;
+    border-left:40px solid red;
+    border-top:40px solid red;
+    z-index: 1;
+}
+.cuxiao-text{
+    position: absolute;
+    color: #fff;
+    top:5px;
+    left: 20px;
+    z-index: 2;
+    font-size: 14px;
+}
+.cuxiao span h4{
+    display: inline;
+    margin-right: 5px;
 }
