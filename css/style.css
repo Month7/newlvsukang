@@ -8,12 +8,15 @@ a:link,a:visited{
 a:hover{
     text-decoration: none;
 }
+div{
+    box-sizing:border-box;
+}
 /*====================================公共页面 头部================================*/
 .header{
     height: 125px;
 }
 .header-top {
-    width: 80%;
+    width: 100%;
     margin: 5px auto;
     display: flex;
 }
@@ -29,7 +32,7 @@ a:hover{
    display: flex;
 }
 .header-nav{
-    width: 70%;
+    width: 100%;
     margin: auto;
     display: flex;
 }
@@ -62,11 +65,18 @@ a:hover{
     height: 40px;
     width: 100%;
     display: flex;
-    padding: 0 13% 0 13%;
+}
+.carouselBg{
+    background: #55BE59;
 }
 .carousel{
-    padding: 0 13% 0 13%;
-    background: #55BE59;
+    left: 150px;
+    position: relative;
+}
+.carousel img{
+    position: absolute;
+    top:0;
+    display: none;
 }
 .nC-head .all-sort{
     line-height: 40px;
@@ -101,4 +111,442 @@ a:hover{
 }
 .dropMenu a:hover{
     background: #fff;
+}
+.product a{
+    color: #999;
+    font-size: 14px;
+    margin: 3px;
+    /* margin: 0 8px 0 8px; */
+}
+.product a:hover{
+    color: rgb(255, 153, 0);
+    text-decoration: none;
+}
+.separtor{
+    margin-top:10px;
+    border-bottom: 1px dashed #e7e7e7;
+}
+.row{
+    margin: 10px 80px 0 80px;
+}
+.product{
+    display: none;
+    position: absolute;
+    
+    left: 150px;
+    top:0;
+    z-index: 4;
+    background: #fff;
+    padding-left: 20px;
+    padding-top:10px;
+    width: 800px;
+}
+.carousel-li{
+    color: #fff;
+    z-index: 99;
+    position: absolute;
+    left: 600px;
+    bottom:100px;
+}
+.carousel-li ul li{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    float: left;
+    margin: 20px;
+    cursor: pointer;
+}
+/*====================侧边导航=======================================*/
+.right-banner{
+    height: 100%;
+    width: 40px;
+    background: rgb(43, 43, 43);
+    position: fixed;
+    right: 0;
+    top:0;
+    z-index: 99;
+}
+.right-banner-content{
+    width: 100%;
+    position: fixed;
+    top:0;
+}
+.rbl{
+    height: 100%;
+    width: 40px;
+   
+    position: absolute;
+    right: 40px;
+    top:0;
+    z-index: 99;
+   
+}
+.rbl-content{
+    width: 100%;
+    position: fixed;
+    top:0;
+}
+.user{
+    position: absolute;
+    top:250px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+}
+.user:hover{
+    background: orange;
+}
+.rs-money{
+    position: absolute;
+    color: #fff;
+    width: 40px;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    top:380px;
+}
+.rs-money:hover{
+    background: orange;
+}
+.rs-like{
+    position: absolute;
+    top:420px;
+    color: #fff;
+    width: 40px;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+}
+.rs-like:hover{
+    background: orange;
+}
+.rs-er{
+    position: absolute;
+    top:460px;
+    color: #fff;
+    width: 40px;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+}
+.rs-er:hover{
+    background: orange;
+}
+.rb-cart{
+    position: absolute;
+    top:300px;
+    color: #fff;
+    width: 40px;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+}
+.rb-cart .glyphicon-shopping-cart{
+    display: block;
+}
+.rb-cart:hover{
+    background: orange;
+}
+.rb{
+    position: relative;
+}
+.rbl-user{
+    position: absolute;
+    width: 320px;
+    height: 190px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background: #fff;
+    left: -280px;
+    top:250px;
+    display: none;
+    padding: 10px;
+}
+.rbl-user img{
+    border-radius: 50%;
+}
+.OL{
+    display:flex;
+    justify-content:space-around;
+}
+.OL a{
+    display: block;
+    color: black;
+    padding: 3px;
+ 
+}
+.myOrder{
+    border: 1px solid gray;
+    
+}
+.myLike{
+    border: 1px solid gray;
+   
+}
+/*=========================================页脚==================================================*/
+/* .footer{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-top:10px;
+    height: 100px;
+    background: black;
+    display: flex;
+    justify-content:space-between;
+    color: #fff;
+}
+.footer div{
+    margin-top:40px;
+}
+.footer img{
+    height: 50px;
+} */
+.footer{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(47, 47, 47);
+    padding-top:20px;
+}
+.footer_child{
+    height: 60px;
+    width: 1000px;
+    margin: auto;
+    background-color: rgb(47, 47, 47);
+}
+.footer_child img{
+    margin-top:10px;
+}
+.footer_child_right{
+    width: 440px;
+    height: 60px;
+    float: right;
+}
+.footer_child_right p{
+    margin-left: 160px;
+    color: #939393;
+    margin-top: 5px;
+}
+.footer_child_right a{
+    text-decoration: none;
+    color:#939393;
+}
+.footer_child_right span{
+    color: #939393;
+}
+.footer_child_right a:link,
+.footer_child_right a:visited{
+    color: #939393;
+}
+.footer_child_right a:hover{
+    color: yellow;
+}
+/*=========================================页脚==================================================*/
+.market-main{
+    max-width: 1070px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.container-special{
+    border: 1px solid rgb(255, 153, 0);
+    border-top: 3px solid rgb(255, 153, 0);
+    padding: 15px;
+}
+.market-first{
+    padding: 10px;
+    height: 553px;
+    width: 263px;
+    cursor: pointer;
+    text-align: center;
+}
+.market-first img{
+    opacity: 1;
+}
+.market-first img:hover{
+    opacity: 0.8;
+}
+.market-each{
+    padding: 10px;
+    height: 287px;
+    width: 263px;
+    border: 2px solid white;
+    /* cursor: pointer; */
+    text-align: center;
+}
+.market-each:hover{
+    border: 2px solid rgb(255, 153, 0);
+}
+.redColor{
+    color: white;
+    font-size: 16px;
+}
+.market-cart{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(255, 153, 0);
+    text-align: center;
+    padding: 4.5px;
+    float: right;
+}
+.market-price{
+    float: left;
+    font-size: 23px;
+}
+.blank{
+    display: block;
+    width: 300px;
+    background-color: black;
+    height: 30px;
+}
+.market-menu{
+    height: 200px;
+    max-width:1070px;
+    margin:  10px auto;
+}
+.tab-one{
+    margin-left: 0px;
+    /* height: 40px; */
+    float: left;
+    margin-top:7px;
+    width:100%;
+}
+.tab-nav{
+    width: 10%;
+    float: left;
+}
+.tab-nav span{
+    display: block;
+    margin-left: 40px;
+}
+.tab-content{
+    width: 90%; 
+}
+.market-menu a{
+    font-size: 14px;
+    color: #999999;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin-left: 25px;
+    margin-top:3px;
+}
+.market-menu a:link,
+.market-menu a:visited{
+    color: #999999;
+    text-decoration: none;
+}
+.market-menu a:hover{
+    color: #FF9900;
+    text-decoration: none;
+}
+.market-menu a:active{
+    /* color: #FF9900; */
+    color: red;
+    text-decoration: none;
+}
+.market-menu a.selected{
+    color: #FF9900;
+}
+.tab-drop{
+    margin-left: 0px;
+    float: left;
+    margin-top:7px;
+    width:100%;
+}
+.tab-content-drop{
+    margin-right: 10px;
+    margin-left: 106px;
+    background-color:#F3F3F3;
+    height: 90px;
+}
+.tab-content-drop-special{
+    margin-right: 10px;
+    margin-left: 106px;
+    background-color:#fff;
+    height: 10px;
+}
+/*================================浮动==================================*/
+.hide-nav{
+    height: 50px;
+    width: 100%;
+    background: orange;
+    position: fixed;
+    top:0;
+    z-index: 99;
+    display: none;
+}
+.hide-nav input{
+    margin-top: 15px;
+    margin-left: 30%;
+    width: 40%;
+}
+.hide-nav button{
+    color: #fff;
+    border: none;
+    background: orange;
+}
+
+.floatled{
+    display: none;
+    position: fixed;
+    top:490px;
+    left:70px;
+    font-size: 12px;
+    font-family: Arial;
+    padding: 3px;
+}
+.floatled li{
+    list-style-type: none;
+    display: block;
+    width: 36px;
+    height: 33px;
+    margin-bottom: 6px;
+}
+.floatled-part{
+    height: 37px;
+    width: 37px;
+    background-color: rgb(98, 98, 98);
+    color: white;
+    border-width: 0;
+}
+.floatled-part img{
+    width: 100%;
+    height: 100%;
+}
+.active-red{
+    background-color: red;
+}
+.active-blue{
+    background-color: rgb(10, 166, 232);
+}
+.active-green{
+    background-color:rgb(100, 195, 51);
+}
+.active-orange{
+    background-color: orange;
+}
+/*=======================================今日推荐===================================*/
+.today .title{
+    background: rgb(47, 47, 47);
+    color: #fff;
+    font-size: 18px;
+}
+.today .content,
+.today .title{
+    display: flex;
+    justify-content: space-between;
+}
+.today .content img,
+.today .title img{
+    width: 60%;
+    transition: all 0.8s;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+.today .content img:hover{
+    transform: translateX(-20px);
 }
