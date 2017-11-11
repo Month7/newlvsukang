@@ -163,13 +163,15 @@ div{
     height: 100%;
     width: 40px;
     background: rgb(43, 43, 43);
+  
     position: fixed;
     right: 0;
     top:0;
     z-index: 99;
 }
 .right-banner-content{
-    width: 100%;
+    
+    width: 40px;
     position: fixed;
     top:0;
 }
@@ -255,6 +257,30 @@ div{
 .rb{
     position: relative;
 }
+.rbl-hurt{
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    background: rgb(97, 97, 97);
+    left: -60px;
+    top:380px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    display: none;
+}
+.rbl-love{
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    background: rgb(97, 97, 97);
+    left: -60px;
+    top:425px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    display: none;
+}
 .rbl-user{
     position: absolute;
     width: 320px;
@@ -285,26 +311,9 @@ div{
 }
 .myLike{
     border: 1px solid gray;
-   
 }
 /*=========================================页脚==================================================*/
-/* .footer{
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    margin-top:10px;
-    height: 100px;
-    background: black;
-    display: flex;
-    justify-content:space-between;
-    color: #fff;
-}
-.footer div{
-    margin-top:40px;
-}
-.footer img{
-    height: 50px;
-} */
+
 .footer{
     width: 100%;
     height: 90px;
@@ -695,4 +704,285 @@ div{
 .cuxiao span h4{
     display: inline;
     margin-right: 5px;
+}
+
+
+/*===================================================购物车=========================================*/
+.cart-{
+    max-width: 1043px;
+    margin: 10px auto;
+}
+.title-button{
+    background-color: #AAAAAA;
+    border: 1px solid #AAAAAA;
+    border-radius: 2px;
+    color: white;
+    width: 53px;
+    height: 25px;
+}
+.title-price{
+    color: #ff9900;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+.cart-bottom{
+    background-color: #E5E5E5;
+    line-height: 50px;
+    margin: 20px 0;
+    color: black;
+    padding-left: 20px;
+}
+.bottom-button{
+    background-color: #AAAAAA;
+    border-width: 0;
+    color: white;
+    width: 120px;
+    height: 50px;
+    font-size:20px;
+    text-align: center;
+}
+.select-img{
+    cursor: pointer;
+}
+.total{
+    color: #ff9900;
+    font-weight: bold;
+    font-size: 16px;
+}
+.bottom-price{
+    color: #ff9900;
+    font-weight: bold;
+    font-size: 20px;
+}
+/*=======================================中间的内容=================================*/
+.cart-table{
+    width: 100%;
+    font-size: 12px;
+}
+.cart-table tbody td{
+    padding: 20px 20px;
+}
+.cart-table thead th{
+    font-weight: normal;
+    padding: 20px 20px;
+    color: #3C3C3C;
+}
+.cart-picture{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #eeeeee;
+    padding: 1px;
+}
+.td-text{
+    color:#3c3c3c;
+}
+.td-text:hover{
+    color: #ff9900;
+}
+.text-link{
+    height: 80px;
+    position: relative;
+}
+.renzheng-img{
+    position: absolute;
+    height: 20px;
+    bottom: 0;
+}
+.deletePrice{
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #9C9C9C;
+    display: block;
+    font-weight: bold;
+}
+.nowPrice{
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff9900;
+    font-family: Arial;
+}
+.changeNumber{
+    width: 90px;
+    border: 1px solid #E5E5E5;
+}
+.changeNumber a{
+    display: inline-block;
+    width: 15px;
+    color: black;
+    text-decoration: none;
+}
+.changeNumber a:hover{
+    text-decoration: none;
+}
+.changeNumber input{
+    display: inline-block;
+    width: 42px;
+    border: 1px solid #AAAAAA;
+}
+.radio-check{
+    cursor: pointer;
+}
+.radios-check{
+    cursor: pointer;
+}
+/*===========================================我的服务=========================================*/
+.social{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: orange;
+    display: block;
+}
+/*==========================================产品页=====================================================*/
+.buy-body{
+    width: 900px;
+    margin: 10px auto;
+    /* background-color: #F8F8F8; */
+}
+.buy-picture{
+    margin: 20px 0 20px 0;
+    width: 45%;
+    float: left;
+    background-color: #F8F8F8;
+}
+.picture-small{
+    margin-top:5px;
+    /* border: 1px solid #ECECEC; */
+    background-color: #F8F8F8;
+}
+.picture-big img{
+    width: 360px;
+    height: 256px;
+}
+.picture-small img{
+    width: 95px;
+    height: 66px;
+    border: 2px solid #ECECEC;
+}
+.picture-small img:hover{
+    border: 2px solid red;
+}
+.buy-text{
+    float: left;
+    width: 45%;
+    margin: 20px 10px 10px 10px;
+}
+.buy-text-title{
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+.leftText{
+    color: #999999;
+    font-size: 14px;
+}
+.rightText{
+    color: #FE0055;
+    font-size: 14px;
+}
+.textDiv{
+    margin-top:10px;
+}
+
+
+.btn2 {
+	background: none;
+	display: inline-block;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	border-radius:0px !important;
+	text-decoration:none;
+	color:#000;
+	font-size: 1.0em;
+	border: 2px solid #ff9900;
+	padding: 0.4em;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+.btn2-1c:after {
+    content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+    background-color: #ff9900!important;
+}
+.btn2-1c:hover,
+.btn2-1c:active {
+    color: white !important;
+    text-decoration: none;
+}
+.btn2-1c:hover:after,
+.btn2-1c:active:after {
+	width: 100%;
+}
+
+
+.buttonDiv{
+    margin-top:20px;
+} 
+.buttonDiv a{
+    margin-left: 30px;
+}
+.indroduction{
+    padding: 40px 20px 40px 20px;
+    background-color: white;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+.picutre-big img{
+    height: 270px;
+    width: 350px;
+}
+
+/*=============================放大镜效果===========================*/
+.huaKuai{
+    width: 100px;
+    height: 100px;
+    display: none;
+    left:0;
+    top:0;
+    background-color:#454545;
+    opacity:0.5;
+    position:absolute;
+    cursor:move;
+}
+.normal{
+    position: relative;
+}
+.fangDa{
+    width:350px;
+    height:270px;
+    display:none;
+    position:absolute;
+    right:-300px;
+    top:0;
+    overflow:hidden;
+    background-color:#454545;
+    z-index: 100;
+}
+.fangDa img{
+    width: 0px;
+    height: 0px;
+    margin-left:0;
+    margin-top:0;
+}
+.fangDaImgs{
+    height: 100%;
+    width:100%;
+}
+.flyer-img{
+    width: 30px;
+    height: 30px;
 }
