@@ -273,6 +273,7 @@ $(function(){
         var footer=$(".footer").offset().top;
     }
     var $htmlBody=$("html,body");
+    var $publish=$(".publish");
     fruit-=40;
     fish-=40;
     rice-=40;
@@ -284,13 +285,10 @@ $(function(){
     var $ID5=$("#5");
     $(window).scroll(function(){
         var _top=$(window).scrollTop();
-        if(_top>500&&_top<(footer-720)){
+        if(_top>400&&_top<(footer-720)){
             $flowSearch.show();
             $flowNav.show();
-            if(_top>500){
-                $flowSearch.show();
-                $flowNav.show();
-            }
+            $publish.show();
             if(_top>(fruit-220)&&_top<(fish-220)){
                 $ID2.removeClass("active-blue");
                 $ID3.removeClass("active-green");
@@ -319,6 +317,7 @@ $(function(){
     else{
         $flowSearch.hide();
         $flowNav.hide();
+        $publish.hide();
     }
     });
     $ID1.click(function(){
@@ -381,14 +380,4 @@ $(function(){
     });
 
 });
-
-
-// var buy = 0;
-// var money = 2;
-// do {
-//     buy++;
-//     console.log(buy);
-//     money--;
-//     if (money == 0)
-//         break;
-// } while (buy);
+console.log($(window).width());
