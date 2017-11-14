@@ -212,9 +212,9 @@ $(function(){
     $(".carouselBg").css("height",$imgH);
     $(".carousel-li li").eq(i).click(function(){
         switch(i){
-            case 0:$bg.css("background","#F44661");break;
+            case 0:$bg.css("background","#A7FD00");break;
             case 1:$bg.css("background","#0F1024");break;
-            case 2:$bg.css("background","#55BE59");break;
+            case 2:$bg.css("background","#FF9C2A");break;
         }
         if(i==2){
             $(".carousel img[cid="+i+"]").fadeOut();
