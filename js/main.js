@@ -204,12 +204,25 @@ $(function(){
         $("span.calPrice[oid="+oid+"]").html("￥"+smallPrice);
     });
     var i=0;
+    if($(".carousel").length>0){
+
     var $imgH=$(".carousel img").css("height");
+   
     var windowHeight=$(window).height();
     $(".right-banner-content").css("height",windowHeight);
     var $bg=$(".carouselBg");
+    $imgH=$imgH.replace(/px/,"");
+    console.log($imgH);
+    if($imgH==0){
+        $imgH=455;
+        $(".carouselBg").css("height","455px");
+    }
+    else{
+        $(".carouselBg").css("height",$imgH);
+    }
     $(".carousel img[cid=0]").show();
-    $(".carouselBg").css("height",$imgH);
+}
+    
     $(".carousel-li li").eq(i).click(function(){
         switch(i){
             case 0:$bg.css("background","#A7FD00");break;
@@ -378,6 +391,19 @@ $(function(){
             }
         })
     });
-
+    $(".cuxiao").children().click(function(){
+        window.location.href="促销.html";
+    });
+    /*======================================登陆注册=============================================*/
+    $("#toEmail").click(function(){
+        // $(".register-phone").hide();
+        $(".register-email").animate({left:"0"},200);
+        $(".register-phone").animate({left:"400px"},10);
+    });
+    $("#toPhone").click(function(){
+        // $(".register-phone").show();
+        // $(".register-email").hide();
+        $(".register-phone").animate({left:"0"},200);
+        $(".register-email").animate({left:"-400px"},10);
+    })
 });
-console.log($(window).width());

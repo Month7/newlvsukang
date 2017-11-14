@@ -4,7 +4,7 @@
 <title>绿速康首页</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="js/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -771,12 +771,12 @@
                             <li></li>
                         </ul>
                     </div>
-        <div class="carousel container">
-                    <img src="images/ad1.jpg" cid="0" >
-                    <img src="images/ad2.jpg" cid="1">
-                    <img src="images/ad3.jpg" cid="2">
-                    <img src="images/ad3.jpg" cid="3">
-        </div>
+            <div class="carousel container">
+                        <img src="images/ad1.jpg" cid="0" id="img1">
+                        <img src="images/ad2.jpg" cid="1" id="img2">
+                        <img src="images/ad3.jpg" cid="2" id="img3">
+                        <img src="images/ad3.jpg" cid="3" id="img4">
+            </div>
         </div>
     </div>
     <div class="floatled container">
@@ -792,7 +792,7 @@
     <!--今日推荐-->
     <div class="container today">
         <div class="row">
-            <div class="col-md-3 title">
+            <div class="col-md-3 title col-xs-3">
                 <div>
                     <p>今日推荐</p>
                 </div>
@@ -800,7 +800,7 @@
                     <img src="images/2016.png"/>
                 </div>
             </div>
-            <div class="col-md-3 content">
+            <div class="col-md-3 content col-xs-3">
                 <div>
                     <p><strong>真的有鱼</strong></p>
                     <p>开年福利篇</p>
@@ -810,7 +810,7 @@
                 </div>
             </div>
             
-            <div class="col-md-3 content">
+            <div class="col-md-3 content col-xs-3">
                  <div>
                     <p><strong>真的有鱼</strong></p>
                     <p>开年福利篇</p>
@@ -819,7 +819,7 @@
                     <a href="购买页.html"><img src="images/tj1.png "></img></a>
                 </div>
             </div>
-            <div class="col-md-3 content">
+            <div class="col-md-3 content col-xs-3">
                  <div>
                     <p><strong>绿色有机蔬菜</strong></p>
                     <p>绿色有机蔬菜</p>
@@ -841,7 +841,7 @@
                 秒杀
             </div>
             <div class="cuxiao-main">
-                <img src="images/activity1.jpg">
+                <a href="促销.html"><img src="images/activity1.jpg"></a>
             </div>
         </div>
         <div class="col-md-3">
@@ -851,7 +851,7 @@
                 秒杀
             </div>
             <div class="cuxiao-main">
-                <img src="images/activity2.jpg">
+                <a href="促销.html"><img src="images/activity2.jpg"></a>
             </div>
         </div>
         <div class="col-md-3">
@@ -861,7 +861,7 @@
                 秒杀
             </div>
             <div class="cuxiao-main">
-                <img src="images/activity3.jpg">
+                <a href="促销.html"><img src="images/activity3.jpg"></a>
             </div>
         </div>
         <div class="col-md-3">
@@ -871,7 +871,7 @@
                 秒杀
             </div>
             <div class="cuxiao-main">
-                <img src="images/activity.jpg">
+                <a href="促销.html"><img src="images/activity.jpg"></a>
             </div>
         </div>
     </div>
@@ -881,7 +881,7 @@
         <div class="icon" id="fruit">
             <span>
                 <img src="images/icon1.png">
-                <a href="购买页.html">水果蔬菜</a>
+                <a href="生鲜水果.html">水果蔬菜</a>
             </span>
             <hr>
         </div>
@@ -910,7 +910,7 @@
                     绿色有机蔬菜
                 </div>
                 <div class="show-angle"></div>
-                <img src="images/act2.png">
+                <a href="生鲜水果.html"><img src="images/act2.png"></a>
             </div>
             <div class="col-md-2 show-content">
                 <a href="购买页.html"><img src="images/1.jpg"></a>
@@ -1024,7 +1024,7 @@
                 <div class="icon" id="fish">
                         <span>
                             <img src="images/icon2.png">
-                            <a href="购买页.html">畜牧水产</a>
+                            <a href="畜牧水产.html">畜牧水产</a>
                         </span>
                         <hr>
                 </div>
@@ -1054,7 +1054,7 @@
                             畜牧水产专区
                         </div>
                         <div class="show-angle"></div>
-                        <img src="images/act3.png">
+                        <a href="畜牧水产.html"><img src="images/act3.png"></a>
                     </div>
                     <div class="col-md-2 show-content">
                         <a href="购买页.html"><img src="images/2-1.png"></a>
@@ -1168,7 +1168,7 @@
                     <div class="icon" id="rice">
                             <span>
                                 <img src="images/icon1.png">
-                                <a href="购买页.html">米面粮油</a>
+                                <a href="米面粮油.html">米面粮油</a>
                             </span>
                             <hr>
                         </div>
@@ -1176,29 +1176,29 @@
                         <div class="col-md-2 show-item show-rice">
                             <div class="show-title">
                                 <div class="show-title-circle">
-                                    水果
+                                    米面
                                 </div>
                                 <div class="show-title-circle">
-                                    水果
+                                    米面
                                 </div>
                                 <div class="show-title-circle">
-                                    水果
+                                    米面
                                 </div>
                                 <div class="show-title-circle">
-                                    蔬菜
+                                    粮油
                                 </div>
                                 <div class="show-title-circle">
-                                    蔬菜
+                                    粮油
                                 </div>
                                 <div class="show-title-circle">
-                                    蔬菜
+                                    粮油
                                 </div>
                             </div>
                             <div class="show-text">
                                 米面粮油专区
                             </div>
                             <div class="show-angle"></div>
-                            <img src="images/act4.png">
+                            <a href="米面粮油.html"><img src="images/act4.png"></a>
                         </div>
                         <div class="col-md-2 show-content">
                             <a href="购买页.html"><img src="images/4-1.jpg"></a>
@@ -1312,7 +1312,7 @@
                     <div class="icon" id="tea">
                             <span>
                                 <img src="images/icon4.png">
-                                <a href="购买页.html">农副产品</a>
+                                <a href="农副产品.html">农副产品</a>
                             </span>
                             <hr>
                         </div>
@@ -1342,7 +1342,7 @@
                                 农副产品专区
                             </div>
                             <div class="show-angle"></div>
-                            <img src="images/act.png">
+                            <a href="农副产品.html"><img src="images/act.png"></a>
                         </div>
                         <div class="col-md-2 show-content">
                             <a href="购买页.html"><img src="images/5-1.jpg"></a>
