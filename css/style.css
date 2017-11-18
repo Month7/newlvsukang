@@ -326,9 +326,9 @@ div{
     width: 1000px;
     margin: auto;
     background-color: rgb(47, 47, 47);
-}
-.footer_child img{
-    margin-top:10px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 .footer_child_right{
     width: 440px;
@@ -607,22 +607,26 @@ div{
     z-index: 99;
     display: none;
 }
+.hide-nav img{
+    height: 40px;
+    margin-left: 30%;
+}
 .hide-nav input{
     margin-top: 15px;
-    margin-left: 30%;
+    margin-left: 10px;
     width: 40%;
+    height: 60%;
 }
 .hide-nav button{
     color: #fff;
     border: none;
     background: orange;
 }
-
 .floatled{
     display: none;
     position: fixed;
     top:490px;
-    left:70px;
+ 
     font-size: 12px;
     font-family: Arial;
     padding: 3px;

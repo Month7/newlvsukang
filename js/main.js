@@ -212,7 +212,7 @@ $(function(){
     $(".right-banner-content").css("height",windowHeight);
     var $bg=$(".carouselBg");
     $imgH=$imgH.replace(/px/,"");
-    console.log($imgH);
+    
     if($imgH==0){
         $imgH=455;
         $(".carouselBg").css("height","455px");
@@ -277,13 +277,13 @@ $(function(){
     /*=================================浮动导航栏=============================================*/
     var $flowSearch=$(".hide-nav");
     var $flowNav=$(".floatled");
-  
     if($("#fruit").length>0){
         var fruit=$("#fruit").offset().top;
         var fish=$("#fish").offset().top;
         var rice=$("#rice").offset().top;
         var tea=$("#tea").offset().top;
         var footer=$(".footer").offset().top;
+        var left_=$("#fruit").offset().left-81;
     }
     var $htmlBody=$("html,body");
     var $publish=$(".publish");
@@ -296,12 +296,18 @@ $(function(){
     var $ID3=$("#3");
     var $ID4=$("#4");
     var $ID5=$("#5");
+   
+    left_=left_+"px";
+   
+    $flowNav.css("left",left_);
+   
     $(window).scroll(function(){
         var _top=$(window).scrollTop();
-        if(_top>400&&_top<(footer-720)){
+        if(_top>400&&_top<(tea)){
             $flowSearch.show();
             $flowNav.show();
             $publish.show();
+           
             if(_top>(fruit-220)&&_top<(fish-220)){
                 $ID2.removeClass("active-blue");
                 $ID3.removeClass("active-green");
@@ -333,6 +339,7 @@ $(function(){
         $publish.hide();
     }
     });
+   
     $ID1.click(function(){
         $htmlBody.animate({scrollTop:fruit},500);
     });
@@ -396,14 +403,66 @@ $(function(){
     });
     /*======================================登陆注册=============================================*/
     $("#toEmail").click(function(){
-        // $(".register-phone").hide();
         $(".register-email").animate({left:"0"},200);
         $(".register-phone").animate({left:"400px"},10);
     });
     $("#toPhone").click(function(){
-        // $(".register-phone").show();
-        // $(".register-email").hide();
         $(".register-phone").animate({left:"0"},200);
         $(".register-email").animate({left:"-400px"},10);
+    })
+    /*=====================================图片懒加载==================================================*/
+    $(window).scroll(function(){
+        var $wTop=$(window).scrollTop();
+        var $wHeight=$(window).height();
+        if($(".content").length>0){
+            if($(".content").find("img").offset().top-$wTop<$wHeight){
+                $(".content").find("img").each(function(){
+                    $(this).attr("src",$(this).attr("data-src"));
+                })
+            }
+            if($(".cuxiao").offset().top-$wTop<$wHeight){
+                $(".cuxiao-main").find("img").each(function(){
+                    $(this).attr("src",$(this).attr("data-src"));
+                })
+            }
+            if(fruit-$wTop<$wHeight){
+                $(".show-content").find("img").each(function(){
+                    $(this).attr("src",$(this).attr("data-src"));
+                })
+            }
+        }
+        if(("#row1").length>0){
+            if($("#row1").offset().top-$wTop<$wHeight){
+                $("#row1").find(".market-each").find("img").each(function(){
+                    $(this).attr("src",$(this).attr("data-src"));
+                })
+            }
+            if($("#row2").offset().top-$wTop<$wHeight){
+                $("#row2").find(".market-each").find("img").each(function(){
+                    $(this).attr("src",$(this).attr("data-src"));
+                })
+            }
+            if($("#row3").offset().top-$wTop<$wHeight){
+                $("#row3").find(".market-each").find("img").each(function(){
+                    $(this).attr("src",$(this).attr("data-src"));
+                })
+            }
+            if($("#row4").offset().top-$wTop<$wHeight){
+                $("#row4").find(".market-each").find("img").each(function(){
+                    $(this).attr("src",$(this).attr("data-src"));
+                })
+            }
+            if($("#row5").offset().top-$wTop<$wHeight){
+                $("#row5").find(".market-each").find("img").each(function(){
+                    $(this).attr("src",$(this).attr("data-src"));
+                })
+            }
+            if($("#row6").offset().top-$wTop<$wHeight){
+                $("#row6").find(".market-each").find("img").each(function(){
+                    $(this).attr("src",$(this).attr("data-src"));
+                })
+            }
+        }
+        
     })
 });
