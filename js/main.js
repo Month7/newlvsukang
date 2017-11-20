@@ -1,3 +1,8 @@
+changeRootFont();
+function changeRootFont() {
+    document.documentElement.style.fontSize=((window.innerWidth / 750) * 100) + 'px';
+}
+window.addEventListener('resize', changeRootFont, false);
 $(function(){
     /*=============================================商品飞入购物车效果===============================*/
     $("#addCart").click(function(){
@@ -203,11 +208,11 @@ $(function(){
         smallPrice=formatMoney(smallPrice);
         $("span.calPrice[oid="+oid+"]").html("￥"+smallPrice);
     });
+    /*===========================================轮播图===================================*/
     var i=0;
     if($(".carousel").length>0){
-
     var $imgH=$(".carousel img").css("height");
-   
+  
     var windowHeight=$(window).height();
     $(".right-banner-content").css("height",windowHeight);
     var $bg=$(".carouselBg");
@@ -298,47 +303,51 @@ $(function(){
     var $ID5=$("#5");
    
     left_=left_+"px";
-   
+    
     $flowNav.css("left",left_);
-   
-    $(window).scroll(function(){
-        var _top=$(window).scrollTop();
-        if(_top>400&&_top<(tea)){
-            $flowSearch.show();
-            $flowNav.show();
-            $publish.show();
-           
-            if(_top>(fruit-220)&&_top<(fish-220)){
-                $ID2.removeClass("active-blue");
-                $ID3.removeClass("active-green");
-                $ID4.removeClass("active-orange");
-                $ID1.addClass("active-red");
+    if($(window).width()>768){
+        $(window).scroll(function(){
+            var _top=$(window).scrollTop();
+            if(_top>400&&_top<(tea)){
+                $flowSearch.show();
+                $flowNav.show();
+                $publish.show();
+               
+                if(_top>(fruit-220)&&_top<(fish-220)){
+                    $ID2.removeClass("active-blue");
+                    $ID3.removeClass("active-green");
+                    $ID4.removeClass("active-orange");
+                    $ID1.addClass("active-red");
+                }
+                if(_top>(fish-220)&&_top<(rice-220)){
+                    $ID1.removeClass("active-red");
+                    $ID3.removeClass("active-green");
+                    $ID4.removeClass("active-orange");
+                    $ID2.addClass("active-blue");
+                }
+                if(_top>(rice-220)&&_top<(tea-220)){
+                    $ID1.removeClass("active-red");
+                    $ID2.removeClass("active-blue");
+                    $ID4.removeClass("active-orange");
+                    $ID3.addClass("active-green");
+                }
+                if(_top>(tea-220)&&_top<footer){
+                    $ID1.removeClass("active-red");
+                    $ID2.removeClass("active-blue");
+                    $ID3.removeClass("active-green");
+                    $ID4.addClass("active-orange");
+                }
             }
-            if(_top>(fish-220)&&_top<(rice-220)){
-                $ID1.removeClass("active-red");
-                $ID3.removeClass("active-green");
-                $ID4.removeClass("active-orange");
-                $ID2.addClass("active-blue");
-            }
-            if(_top>(rice-220)&&_top<(tea-220)){
-                $ID1.removeClass("active-red");
-                $ID2.removeClass("active-blue");
-                $ID4.removeClass("active-orange");
-                $ID3.addClass("active-green");
-            }
-            if(_top>(tea-220)&&_top<footer){
-                $ID1.removeClass("active-red");
-                $ID2.removeClass("active-blue");
-                $ID3.removeClass("active-green");
-                $ID4.addClass("active-orange");
-            }
+        else{
+            $flowSearch.hide();
+            $flowNav.hide();
+            $publish.hide();
         }
-    else{
-        $flowSearch.hide();
-        $flowNav.hide();
-        $publish.hide();
-    }
     });
+    }
+
+   
+   
    
     $ID1.click(function(){
         $htmlBody.animate({scrollTop:fruit},500);
@@ -373,15 +382,16 @@ $(function(){
     });
     /*============================================================================================*/
     if($(".show-item").length>0){
-        var $height=$(".show-item").css("height");
-        var $width=$(".show-item").css("width");
-        $height=$height.replace(/px/,"");
-        $height/=2;
-        $(".show-content").css("height",$height+"px");
-        $(".show-content").css("width",$width);
+        if($(window).width()>768){
+            var $height=$(".show-item").css("height");
+            var $width=$(".show-item").css("width");
+            $height=$height.replace(/px/,"");
+            $height/=2;
+            $(".show-content").css("height",$height+"px");
+            $(".show-content").css("width",$width);
+        }
+       
     }
-  
-   
     /*====================================缩略图效果=====================================*/
     var $imgSmall=$("img.small");
     $imgSmall.mouseenter(function(){
