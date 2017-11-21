@@ -277,8 +277,6 @@ $(function(){
     $(".rs-money").mouseout(function(){
         $(".rbl-hurt").hide();
     });
-   
-
     /*=================================浮动导航栏=============================================*/
     var $flowSearch=$(".hide-nav");
     var $flowNav=$(".floatled");
@@ -364,7 +362,7 @@ $(function(){
     $("#6").click(function(){
         $htmlBody.animate({scrollTop:0},500);
     });
-    /*============================================================================================*/
+    /*========================================分类效果================================================*/
     var $item=$(".drop-item a");
     function showProduct(index){
         $(".product[cid="+index+"]").show();
@@ -380,6 +378,30 @@ $(function(){
         var xid=$(this).attr("xid");
         hideProduct(xid);
     });
+    if($(".sortAll").length>0){
+        (function(){
+            var height=$(".mobie-bottom").css("height");
+            height=height.replace(/px/,"");
+            var height2=(Number($(".header").css("height").replace(/px/,""))+Number($(".sortAll").css("height").replace(/px/,"")));
+            var $viewHeight=($(window).height()-height-height2);
+            var $itemHeight=$viewHeight/($(".drop-item").length);
+            // var $productHeight=$viewHeight/($(".row").length);
+            var $productHeight=$viewHeight/8;
+            $(".drop-item").css({
+                "height":
+                $itemHeight+"px",
+                "line-height":
+                $itemHeight+"px"
+            });
+            $(".row").css("height",$productHeight);
+            $(".sortProduct[xid=1]").show().siblings().hide();
+            
+            $(".drop-item").click(function(){
+                var xid=$(this).attr("xid");     
+                 $(".sortProduct[xid="+xid+"]").show().siblings().hide();     
+            })
+        }())
+    }
     /*============================================================================================*/
     if($(".show-item").length>0){
         if($(window).width()>768){
