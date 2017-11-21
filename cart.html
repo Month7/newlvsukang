@@ -8,7 +8,6 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
 </head>
 <body>
      <!--头部-->
@@ -65,9 +64,10 @@
                         </thead>
                         <tbody style="border:1px solid #CCCCCC">
                             <tr class="cart-item" oid="1">
-                                <td>
+                                <td class="mobie-item">
                                     <img src="images/cartNotSelected.png" class="radio-check" isselected="false" oid="1">
                                     <a href="#"><img src="images/cart/1.jpg" class="cart-picture"></a>
+                                    <a id="mobie-delete" href="#">删除</a>
                                 </td>
                                 <td>
                                     <div class="text-link">
@@ -97,10 +97,11 @@
                             </tr>
                         </tbody>
                         <tbody style="border:1px solid #CCCCCC">
-                                <tr class="cart-item">
-                                    <td>
+                                <tr class="cart-item ">
+                                    <td class="mobie-item">
                                         <img src="images/cartNotSelected.png" isselected="false" class="radio-check" oid="2">
                                         <a href="#"><img src="images/cart/2.jpg" class="cart-picture"></a>
+                                        <a id="mobie-delete" href="#">删除</a>
                                     </td>
                                     <td>
                                         <div class="text-link">
@@ -131,9 +132,10 @@
                             </tbody>
                             <tbody style="border:1px solid #CCCCCC">
                                 <tr class="cart-item">
-                                    <td>
+                                    <td class="mobie-item">
                                         <img src="images/cartNotSelected.png" isselected="false" class="radio-check" oid="3">
                                         <a href="#"><img src="images/cart/3.jpg" class="cart-picture"></a>
+                                        <a id="mobie-delete" href="#">删除</a>
                                     </td>
                                     <td>
                                         <div class="text-link">
@@ -163,6 +165,9 @@
                                 </tr>
                             </tbody>
                     </table>
+                    <div class="footer_mobie">
+                            © 2017 LVSUKANG.COM 版权所有
+                    </div>
                 </div>
                 <div class="cart-bottom">
                     <img src="images/cartNotSelected.png" class="select-img radios-check" isselect="false">
@@ -175,6 +180,20 @@
                     </div>
                 </div>
             </div>
+            <div class="mobie-cart">
+                    <div id="mobie-allSelect">
+                        <img src="images/cartNotSelected.png" class="select-img radios-check" isselect="false">
+                        <span>全选</span>
+                    </div>
+                    <div class="cart-right" style="float:right">
+                        <span>已选商品<span class="total">0</span>件</span>
+                        <span>合计 （不含运费）</span>
+                        <span class="bottom-price">￥0.00</span>
+                        <button class="bottom-button" disabled="disabled">结算</button>
+                    </div>
+            </div>
+       
+        
             <!--右侧导航栏-->
             <div class="right-banner container" style="padding:0">
                     <div class="right-banner-content">
@@ -215,7 +234,8 @@
                         </div>
                     </div>
                 </div>
-			<!--footer-->
+            <!--footer-->
+           
 			<div class="footer">
                     <div class="footer_child container">
                         <img src="images/footer-logo.gif"/>
@@ -235,6 +255,12 @@
                         </div>
                     </div>
                 </div>
+            <div class="mobie-bottom">
+                <a href="index.html"><i class="glyphicon glyphicon-home"></i>首页</a>
+                <a href="index.html"><i class="glyphicon glyphicon-th-list"></i>分类</a>
+                <a href="cart.html" class="mobie-selected"><i class="glyphicon glyphicon-shopping-cart"></i>购物车</a>
+                <a href="index.html"><i class="glyphicon glyphicon-user"></i>我的</a>
+            </div>
 			<script src="js/main.js"></script>
 </body>
 </html>

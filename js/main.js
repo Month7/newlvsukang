@@ -441,7 +441,8 @@ $(function(){
                 })
             }
         }
-        if(("#row1").length>0){
+        if($("#row1").length>0){
+           
             if($("#row1").offset().top-$wTop<$wHeight){
                 $("#row1").find(".market-each").find("img").each(function(){
                     $(this).attr("src",$(this).attr("data-src"));
@@ -475,4 +476,16 @@ $(function(){
         }
         
     })
+    /*====================================移动端适配================================*/
+    if($(window).width()<=768){
+        $(".cart-item").find("td").each(function(){
+            if($(this).find("a").text()=="删除"){
+                if($(this).attr("class")!="mobie-item"){
+                    $(this).hide();
+                }     
+            }
+        })
+    }
+   
 });
+

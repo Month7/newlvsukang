@@ -1,5 +1,11 @@
 @charset "utf-8";
+#mobie-delete{
+    display: none;
+}
 .mobie-bottom{
+    display: none;
+}
+.buy-footer{
     display: none;
 }
 a{
@@ -26,9 +32,6 @@ div{
 .header-top a{
     color: black;
     font-size: 14px;
-}
-.header-top .messagel{
-   
 }
 .header-top .messager{
    margin-left: 65%;
@@ -864,6 +867,18 @@ div{
     display: block;
 }
 /*==========================================产品页=====================================================*/
+.mobie-buy{
+    display: none;
+}
+.buy-indc{
+    background-color:#F8F8F8;
+    padding-bottom:20px;
+}
+.buy-text-bg{
+    background-color:#ECECEC;
+    height:20px;
+    margin-top:10px;
+}
 .buy-body{
     width: 900px;
     margin: 10px auto;
@@ -1235,6 +1250,7 @@ div{
     }
 }
 @media (min-width:1560px){
+  
     a:hover{
         text-decoration: none;
     }
@@ -2002,7 +2018,6 @@ div{
         float: left;
         width: 25%;
         height: 100%;
-      
         text-align: center;
         color: black;
     }
@@ -2016,6 +2031,153 @@ div{
     }
     /*===================================产品购买页===================================================*/
     .buy-body{
+       width: 100%;
+       margin: 0; 
+    }
+    .buy-footer{
+        display: block;
+        height: 1rem;
+        width: 100%;
+        background: #fff;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 99;
+        font-size: 0.4rem;
+    }
+    .buy-text{
+        width: 100%;
+        margin: 0;
+    }
+    .buy-picture{
         display: none;
+    }
+    .buy-text-title{
+        font-size:0.3rem;
+        text-align: center;
+    }
+    .buttonDiv{
+        display: none;
+    }
+    .buy-footer a{
+        margin-top:0.2rem;
+        display: block;
+        width: 20%;
+        float: left;
+        height: 100%;
+        color: black;
+        font-size: 0.3rem;
+    }
+    .mobie-fb{
+        background: orange;
+        color: #fff!important;
+        width: 30%!important;
+        text-align: center;
+        border-right:  1px solid black;
+        line-height: 1rem;
+        margin: 0!important;
+    }
+    .buy-footer i{
+        font-size: 0.5rem;
+    }
+    .buy-text-bg{
+        display: none;
+    }
+    .indroduction{
+        padding: 0.2rem;
+    }
+    .buy-indc{
+        margin-bottom: 0.2rem;
+    }
+    .mobie-buy{
+        margin-top:1.3rem;
+        display: block;
+        z-index: 99;
+        width: 100%;
+        height: 6rem;
+    }
+    .mobie-buy img{
+        height: 100%;
+        width: 100%;
+        z-index: 99;
+    }
+    #carouselId{
+        margin: 0!important;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .carousel-inner{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    /*====================================================购物车==========================================*/
+    .renzheng-img{
+        display: none;
+    }
+    .cart-{
+        margin: 0;
+        margin-top:1.3rem;
+        width: 100%;
+        margin-bottom:2.2rem;
+    }
+    /* .cart-main span{
+        display: none;
+    } */
+    .cart-main{
+        width: 100%;
+        margin: 0;
+    }
+    .cart-title{
+        display: none;
+    }
+    .cart-table{
+        width: 100%;
+    }
+    .changeNumber{
+        display: none;
+    }
+    .cart-table thead{
+        display: none;
+    }
+    .text-link{
+        margin-top:1.7rem!important;
+    }
+    td{
+        padding: 0!important;
+    }
+    .cart-bottom{
+        display: none;
+    }
+    .mobie-item{
+        padding: 0.3rem!important;
+    }
+    .mobie-cart{
+        position: fixed;
+        bottom: 1rem;
+        width: 100%;
+        height: 1.2rem;
+        background: #fff;
+        border: 1px solid #EEEEEE;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom-button{
+        width: 1.3rem;
+        font-size: 0.3rem;
+        line-height: 1rem;
+        text-align: center;
+    }
+    #mobie-allSelect{
+        margin-top:0.5rem;
+       
+    }
+    .calPrice{
+        display: none;
+    }
+    #mobie-delete{
+        display: inline;
+        color: black!important;
     }
 }
