@@ -5,11 +5,18 @@
 <link rel="stylesheet" href="assets/css/amazeui.css" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-<!-- <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+    changeRootFont();
+function changeRootFont() {
+    document.documentElement.style.fontSize=((window.innerWidth / 750) * 100) + 'px';
+}
+window.addEventListener('resize', changeRootFont, false);
+</script>
 </head>
 <body>
     <!--头部-->
@@ -85,6 +92,9 @@
         </div>
         <!---->
             <!--页脚-->
+            <div class="footer_mobie">
+                    © 2017 LVSUKANG.COM 版权所有
+            </div>
     <div class="footer ">
             <div class="footer_child">
                 <img src="images/footer-logo.gif"/>
@@ -104,4 +114,6 @@
                 </div>
             </div>
         </div>
+        <script src="js/main.js"></script>
 </body>
+</html>

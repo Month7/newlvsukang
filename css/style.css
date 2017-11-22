@@ -138,7 +138,6 @@ div{
 .product{
     display: none;
     position: absolute;
-    
     left: 150px;
     top:0;
     z-index: 4;
@@ -470,12 +469,11 @@ div{
 }
 /*===============================================================================================*/
 .market-main{
-    min-width: 1070px;
+    width: 1070px;
     margin: 20px auto;
     padding: 20px;
 }
 .container-special{
-    /* border: 1px solid rgb(255, 153, 0); */
     border-top: 3px solid rgb(255, 153, 0);
 }
 .market-first{
@@ -491,13 +489,17 @@ div{
 .market-first img:hover{
     opacity: 0.8;
 }
-.market-each{
-    padding: 10px;
-    height: 287px;
-    width: 263px;
-    border: 2px solid white;
-    /* cursor: pointer; */
-    text-align: center;
+@media (min-width:1440px){
+    .market-each{
+        padding: 10px;
+        height: 287px;
+        width: 263px;
+        border: 2px solid white;
+        text-align: center;
+    }
+    .mobie-slide{
+        display: none;
+    }
 }
 .market-each:hover{
     border: 2px solid rgb(255, 153, 0);
@@ -526,12 +528,11 @@ div{
 }
 .market-menu{
     height: 200px;
-    min-width:1070px;
+    width:1070px;
     margin:  10px auto;
 }
 .tab-one{
     margin-left: 0px;
-    /* height: 40px; */
     float: left;
     margin-top:7px;
     width:100%;
@@ -566,7 +567,6 @@ div{
     text-decoration: none;
 }
 .market-menu a:active{
-    /* color: #FF9900; */
     color: red;
     text-decoration: none;
 }
@@ -2120,9 +2120,6 @@ div{
         width: 100%;
         margin-bottom:2.2rem;
     }
-    /* .cart-main span{
-        display: none;
-    } */
     .cart-main{
         width: 100%;
         margin: 0;
@@ -2162,21 +2159,38 @@ div{
         justify-content: space-between;
     }
     .bottom-button{
-        width: 1.3rem;
+        width: 2rem;
         font-size: 0.3rem;
         line-height: 1rem;
         text-align: center;
+        font-size: 0.4rem;
     }
     #mobie-allSelect{
-        margin-top:0.5rem;
-       
+        margin-top:0.3rem;
+        width: 30%;
+        font-size: 0.4rem;
     }
     .calPrice{
         display: none;
     }
+    .cart-right{
+        width: 70%;
+        font-size: 0.4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cart-right span{
+        font-size: 0.4rem;
+    }
     #mobie-delete{
         display: inline;
         color: black!important;
+    }
+    .total{
+        font-size: 0.4rem;
+    }
+    .bottom-price{
+        font-size: 0.4rem;
     }
     /*=======================================================全部分类============================================*/
     .sortAll{
@@ -2213,6 +2227,7 @@ div{
     .row{
         padding: 0;
         margin: 0;
+       
     }
     .row a{
         display: inline;
@@ -2222,5 +2237,89 @@ div{
     .separtor{
         margin: 0;
     }
-    
+    /*===================================================登录========================================*/
+    .login{
+        width: 100%;
+        position: static;
+        height: 100%;
+    }
+    .signin-content{
+        background: #fff;
+        padding: 0;
+        margin: 0;
+        margin-top:1.3rem;
+    }
+    /*=========================================每个分类================================================*/
+    .market-main{
+        width: 100%;
+        margin: 0;
+        margin-top:1.3rem;
+        padding: 0;
+    }
+    .container-special{
+        border: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .market-first{
+        display: none;
+    }
+    .market-each{
+        text-align: center;
+        padding: 0;
+        margin: 0!important;
+        border: 1px solid #EEEEEE;
+        border-collapse:collapse;
+        
+    }
+    .market-each img{
+        width: 100%;
+        height: 100%;
+    }
+    .redColor{
+        color: white;
+        font-size: 1.6rem!important;
+    }
+    .market-cart{
+        display: none;
+    }
+    .market-price{
+        font-size: 0.3rem;
+    }
+    .blank{
+        display: block;
+        width: 300px;
+        background-color: black;
+        height: 30px;
+        display: none;
+    }
+    .market-menu{
+        display: none;
+    }
+    #row3{
+        display: none;
+    }
+    #row4{
+        display: none;
+    }
+    #row5{
+        display: none;
+    }
+    #row6{
+        display: none;
+    }
+    #spF{
+        margin-bottom: 0;
+        display: none;
+    }
+    .mobie-slide{
+        display: block;
+        height: 3em;
+        width: 100%;
+        text-align: center;
+        line-height: 3em;
+        color: #fff;
+        background-color: #EEEEEE;
+    }
 }
