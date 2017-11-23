@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>个人中心</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/amazeui.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body style="background-color:#F5F8FA">
+      <!--header-->
+	 <div class="header container" id="perH">
+            <div class="header-top">
+                <div class="messagel">
+                    <a href="signin.html">亲，请登录</a>
+                    <a href="register.html">免费注册</a>
+                </div>
+                <div class="messager">
+                        <div class="topMessage home">
+                                <div class="menu-hd"><a href="#" target="_top" class="h">商城首页</a></div>
+                            </div>
+                            <div class="topMessage my-shangcheng">
+                                <div class="menu-hd MyShangcheng"><a href="#" target="_top"><i class="glyphicon glyphicon-user"></i>个人中心</a></div>
+                            </div>
+                            <div class="topMessage mini-cart">
+                                <div class="menu-hd"><a id="mc-menu-hd" href="cart.html" target="_top"><i class="glyphicon glyphicon-shopping-cart"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+                            </div>
+                            <div class="topMessage favorite">
+                            <div class="menu-hd"><a href="#" target="_top"><i class="glyphicon glyphicon-heart-empty"></i><span>收藏夹</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="header-logo">
+                <a href="index.html"><img src="images/logobig.png"></a>
+            </div>
+            <div class="header-search">
+                <input type="text" placeholder="搜索">
+            </div>
+            <button class="header-searchButton">搜索</button>
+        </div>
+        </div>
+        <!--移动端-->
+        <div class="pWap">
+            <div id="wap-head">
+                我的绿速康
+            </div>
+            <div id="mobieH">
+                <img src="images/portrait.jpg">
+                <p>用户名:lazy</p>
+                <p>V7会员</p>
+            </div>
+            <!---->
+            <div class="wap-money container">
+                <div class="col-xs-4">
+                    <span class="m-title">优惠券</span>
+                    <span class="m-num">21</span>
+                </div>
+                <div class="col-xs-4">
+                    <span class="m-title">账户余额</span>
+                    <span class="m-num">183,999,234</span>
+                </div>
+                <div class="col-xs-4">
+                    <span class="m-title">总积分</span>
+                    <span class="m-num">213700</span>
+                </div>
+            </div>
+            <!--订单-->
+            <div class="wap-order">
+                <div class="person-data-head">
+                        我的订单
+                        <a href="#"  class="pull-right">全部订单</a>
+                </div>
+                <ul>
+                    <li><a href="order.html"><i><img src="images/pay.png"/></i><span>待付款</span></a></li>
+                    <li><a href="order.html"><i><img src="images/send.png"/></i><span>待发货</span></a></li>
+                    <li><a href="order.html"><i><img src="images/receive.png"/></i><span>待收货</span></a></li>
+                    <li><a href="order.html"><i><img src="images/comment.png"/></i><span>待评价</span></a></li>
+                    <li><a href="change.html"><i><img src="images/refund.png"/></i><span>退换货</span></a></li>
+                </ul>
+            </div>
+            
+            <!--九宫格-->
+            <div class="user-squaredIcon">
+                    <div class="person-data-head">
+                            我的常用
+                    </div>
+                    <ul>
+                        <a href="#">
+                            <li class="am-u-sm-4"><i class="am-icon-truck am-icon-md"></i>
+                                <p>物流查询</p>
+                            </li>
+                        </a>
+                        <a href="collection.html">
+                            <li class="am-u-sm-4"><i class="am-icon-heart am-icon-md"></i>
+                                <p>我的收藏</p>
+                            </li>
+                        </a>
+                        <a href="foot.html">
+                            <li class="am-u-sm-4"><i class="am-icon-paw am-icon-md"></i>
+                                <p>我的足迹</p>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="am-u-sm-4"><i class="am-icon-gift am-icon-md"></i>
+                                <p>为你推荐</p>
+                            </li>
+                        </a>
+                        <a href="blog.html">
+                            <li class="am-u-sm-4"><i class="am-icon-share-alt am-icon-md"></i>
+                                <p>我的分享</p>
+                            </li>
+                        </a>
+                        <a href="促销.html">
+                            <li class="am-u-sm-4"><i class="am-icon-clock-o am-icon-md"></i>
+                                <p>限时活动</p>
+                            </li>
+                        </a>
+                    </ul>
+            </div>
+        </div>
+     
+        <!--全部分类-->
+        <div class="navCarousel  container">
+                <div class="nC-head">
+                    <div class="all-sort">全部分类
+                    </div>
+                    <a href="促销.html">活动专区</a>
+                    <a href="market.html">每日市场</a>
+                    <a href="about.html">关于我们</a>
+                    <a href="services.html">服务</a>
+                </div>
+        </div>
+        <div class="person-main container">
+            <div class="person-menu">
+                <ul>
+                        <li class="person active">
+                                <a href="#"><i class="am-icon-user"></i>个人中心</a>
+                            </li>
+                            <li class="person">
+                                <p><i class="am-icon-newspaper-o"></i>个人资料</p>
+                                <ul>
+                                    <li> <a href="information.html">个人信息</a></li>
+                                    <li> <a href="safety.html">安全设置</a></li>
+                                    <li> <a href="address.html">地址管理</a></li>
+                                    <li> <a href="cardlist.html">快捷支付</a></li>
+                                </ul>
+                            </li>
+                            <li class="person">
+                                <p><i class="am-icon-balance-scale"></i>我的交易</p>
+                                <ul>
+                                    <li><a href="order.html">订单管理</a></li>
+                                    <li><a href="change.html">退款售后</a></li>
+                                    <li><a href="comment.html">评价商品</a></li>
+                                </ul>
+                            </li>
+                            <li class="person">
+                                <p><i class="am-icon-dollar"></i>我的资产</p>
+                                <ul>
+                                    <li> <a href="points.html">我的积分</a></li>
+                                    <li> <a href="coupon.html">优惠券 </a></li>
+                                    <li> <a href="bonus.html">红包</a></li>
+                                    <li> <a href="walletlist.html">账户余额</a></li>
+                                    <li> <a href="bill.html">账单明细</a></li>
+                                </ul>
+                            </li>
+                            <li class="person">
+                                <p><i class="am-icon-tags"></i>我的收藏</p>
+                                <ul>
+                                    <li> <a href="collection.html">收藏</a></li>
+                                    <li> <a href="foot.html">足迹</a></li>														
+                                </ul>
+                            </li>
+                            <li class="person">
+                                <p><i class="am-icon-qq"></i>在线客服</p>
+                                <ul>
+                                    <li> <a href="consultation.html">商品咨询</a></li>
+                                    <li> <a href="suggest.html">意见反馈</a></li>							
+                                    
+                                    <li> <a href="news.html">我的消息</a></li>
+                                </ul>
+                            </li>
+                </ul>
+            </div>
+            <div class="person-content">
+                <div class="person-data-head">
+                    <span>个人资料</span>
+                </div>
+                <div class="person-data">
+                    <div style="display:flex">
+                        <div class="person-data-left col-md-2.4">
+                            <img src="images/portrait.jpg">
+                        </div>
+                        <div class="col-md-4.8 person-data-text">
+                            <p><strong>欢迎 Lazy</strong>（11111111111）</p>
+                            <p>Lazy (V7会员)</p>
+                        </div>
+                    </div>
+                    <div style="display:flex" class="container"> 
+                        <div class="col-md-6">
+                            <div class="s-bar">个人资产</div>
+                            <p class="m-item">
+                                    <a href="#">
+                                        <span class="m-title">优惠券</span>
+                                        <span class="m-num">21</span>
+                                    </a>
+                                </p>
+                                <p class="m-item">
+                                    <a href="#">
+                                        <span class="m-title">账户余额</span>
+                                        <span class="m-num">183,999,234</span>
+                                    </a>
+                                </p>
+                                <p class="m-item">
+                                    <a href="#">
+                                        <span class="m-title">总积分</span>
+                                        <span class="m-num">213700</span>
+                                    </a>
+                                </p>
+                        </div>
+                        <div class="person-wallet">
+                                <div class="s-bar">商城钱包</div>
+                                <div style="display:flex">
+                                    <div class="m-img m-shop">
+                                        <img src="images/shopping.png">
+                                        <p>能购物</p>
+                                    </div>
+                                    <div class="m-img m-safe">
+                                        <img src="images/safe.png">
+                                        <p>很安全</p>
+                                    </div>
+                                    <div class="m-img m-profit">
+                                        <img src="images/profit.png">
+                                        <p>很灵活</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                   
+                </div>
+                <div class="">
+                    <div class="person-data-head">
+                        <span>我的订单</span>
+                        <span class="pull-right" style="border:none;"><a href="#">全部订单</a></span>
+                    </div>
+                    <table class="person-order">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                               <td>
+                                   <a href="购买页.html"><img src="畜牧水产/2-4.jpg"></a>
+                               </td>
+                               <td colspan="3">
+                                    <div class="o-bar">已签收</div>
+                                    <div class="o-time">2017-11-20|19:17:53</div>
+                                    <div>共1件商品</div>
+                               </td>
+                               <td colspan="2" class="o-site">
+                                   待评价
+                               </td>
+                               <td colspan="2" class="o-price">
+                                   ￥21.30
+                               </td>
+                               <td colspan="3">
+                                   <button class="o-btn btn-1c"><a href="#">再次购买</a></button>
+                               </td>
+                           </tr>
+                           <tr>
+                                <td>
+                                    <a href="购买页.html"><img src="生鲜水果/2-4.jpg"></a>
+                                </td>
+                                <td colspan="3">
+                                     <div class="o-bar">待收货</div>
+                                     <div class="o-time">2017-11-20|19:17:53</div>
+                                     <div>共1件商品</div>
+                                </td>
+                                <td colspan="2" class="o-site">
+                                    待收货
+                                </td>
+                                <td colspan="2" class="o-price">
+                                    ￥70.00
+                                </td>
+                                <td colspan="3">
+                                    <button class="o-btn btn-1c"><a href="#">再次购买</a></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                    <td>
+                                        <a href="购买页.html"><img src="农副产品/2-4.jpg"></a>
+                                    </td>
+                                    <td colspan="3">
+                                         <div class="o-bar">待发货</div>
+                                         <div class="o-time">2017-11-20|19:17:53</div>
+                                         <div>共1件商品</div>
+                                    </td>
+                                    <td colspan="2" class="o-site">
+                                        待发货
+                                    </td>
+                                    <td colspan="2" class="o-price">
+                                        ￥121.50
+                                    </td>
+                                    <td colspan="3">
+                                        <button class="o-btn btn-1c"><a href="#">再次购买</a></button>
+                                    </td>
+                            </tr>
+                       </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer "> 
+                 <div class="footer_child">
+                     <img src="images/footer-logo.gif"/>
+                     <div class="footer_child_right">
+                             <p>
+                                     <a href="buy.html">主页</a>
+                                     <span>|</span>
+                                     <a href="buy.html">关于我们</a>
+                                     <span>|</span>
+                                     <a href="buy.html">服务</a>
+                                     <span>|</span>
+                                     <a href="buy.html">活动专区</a>
+                                     <span>|</span>
+                                     <a href="buy.html">联系我们</a>
+                             </p>
+                             <p><spe>© 2017 LVSUKANG.COM 版权所有</spe></p>
+                     </div>
+                 </div>
+             </div>
+        <div class="mobie-bottom">
+            <a href="index.html" ><i class="glyphicon glyphicon-home"></i>首页</a>
+            <a href="sort.html"><i class="glyphicon glyphicon-th-list"></i>分类</a>
+            <a href="cart.html"><i class="glyphicon glyphicon-shopping-cart"></i>购物车</a>
+            <a href="index.html" class="mobie-selected"><i class="glyphicon glyphicon-user"></i>我的</a>
+        </div>
+        <script src="js/main.js"></script>
+</body>
+</html>

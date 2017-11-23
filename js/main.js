@@ -525,21 +525,21 @@ $(function(){
                 setTimeout(function(){
                         $("#row3").show();  
                         dcH2=$(document).height();
-                        console.log("dcH2="+dcH2);
+                        
                 },1000);
             }
             if($(window).scrollTop() + $(window).height() >=dcH2-50){
                 setTimeout(function(){
                         $("#row4").show();  
                         dcH3=$(document).height();  
-                        console.log("dcH3="+dcH3);
+                       
                 },1000);
             }
             if($(window).scrollTop() + $(window).height() >=dcH3-50){
                 setTimeout(function(){
                         $("#row5").show();  
                         dcH4=$(document).height();  
-                        console.log("dcH4="+dcH4);
+                       
                 },1000);
             }
             if($(window).scrollTop() + $(window).height() >=dcH4-100){
