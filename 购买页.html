@@ -27,13 +27,13 @@
                                 <div class="menu-hd"><a href="#" target="_top" class="h">商城首页</a></div>
                             </div>
                             <div class="topMessage my-shangcheng">
-                                <div class="menu-hd MyShangcheng"><a href="#" target="_top"><i class="glyphicon glyphicon-user"></i>个人中心</a></div>
+                                <div class="menu-hd MyShangcheng"><a href="person.html" target="_top"><i class="glyphicon glyphicon-user"></i>个人中心</a></div>
                             </div>
                             <div class="topMessage mini-cart">
                                 <div class="menu-hd"><a id="mc-menu-hd" href="cart.html" target="_top"><i class="glyphicon glyphicon-shopping-cart"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
                             </div>
                             <div class="topMessage favorite">
-                            <div class="menu-hd"><a href="#" target="_top"><i class="glyphicon glyphicon-heart-empty"></i><span>收藏夹</span></a></div>
+                            <div class="menu-hd"><a href="#" target="_top"><i class="glyphicon glyphicon-heart"></i><span>收藏夹</span></a></div>
                 </div>
             </div>
         </div>
@@ -87,14 +87,7 @@
                     <img src="产品图片/橙子/big1-3.jpg" alt="Third slide">
                 </div>
             </div>
-            <!-- <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a> -->
+            
         </div>
     </div>
 	<div class="buy-text">
@@ -148,7 +141,7 @@
                 我的收藏
             </div>
             <div class="rbl-user">
-                <img src="images/no-img_mid_.jpg " />
+                <a href="person.html"><img src="images/portrait.jpg " /></a>
                 <span>欢迎来到绿速康</span>
                 <span>请登录</span>
                 <hr>
@@ -188,7 +181,7 @@
 <script>
 	$("img.small").mouseenter(function(){
     var bigUrl=$(this).attr("bigUrl");
-    // var oid=$(this).attr("oid");
+   
     $("img.big").attr("src",bigUrl);
 });
 $("img.big").load(function(){
