@@ -1,4 +1,38 @@
 @charset "utf-8";
+/*=======================================预加载======================================*/
+#previous1{
+    background-image: url(../images/ad1.jpg);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin-top:-100px;
+    background-position: -9999px -9999px;
+}
+#previous2{
+    background-image: url(../images/ad2.jpg);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin-top:-100px;
+    background-position: -9999px -9999px;
+}
+#previous3{
+    background-image: url(../images/ad3.jpg);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin-top:-100px;
+    background-position: -9999px -9999px;
+}
+#previous4{
+    background-image: url(../images/ad3.jpg);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin-top:-100px;
+    background-position: -9999px -9999px;
+    
+}
 .mobie-cart{
     display: none;
 }
@@ -76,18 +110,28 @@ div{
     display: flex;
 }
 .carouselBg{
+    
     background: #FF9C2A;
-    height: 577px;
-}
-.carousel{
-    left: 150px;
+    overflow: hidden;
+    height: 477px;
     position: relative;
 }
-.carousel img{
-    position: absolute;
-    top:0;
-    display: none;
+.data-carousel{
+    /* left: 150px;
+    position: relative; */
+    width: 100%;
+    height: 477px;
+    padding: 0px;
 }
+.data-carousel li{
+    width: 100%;
+    height: 477px;
+    list-style-type: none;
+    display: none;
+    text-align: center;
+}
+
+
 .nC-head .all-sort{
     line-height: 40px;
     color: #fff;
@@ -153,8 +197,8 @@ div{
     color: #fff;
     z-index: 99;
     position: absolute;
-    left: 600px;
-    bottom:100px;
+    left: 45%;
+    bottom: 0;
 }
 .carousel-li ul li{
     display: block;
@@ -1952,6 +1996,14 @@ div{
     width: 120px;
     height: 120px;
     margin-top:20px;
+    cursor: pointer;
+}
+.person-data-left img:hover{
+    -webkit-filter: blur(3px); 
+    -moz-filter: blur(3px);
+     -ms-filter: blur(3px);    
+         filter: blur(3px);
+    
 }
 .person-data-text{
     padding: 30px;
@@ -2072,6 +2124,10 @@ div{
 .person-main a:hover{
     color: black!important;
 }
+.person-history{
+    display: block;
+    
+}
 /*====================================================移动端布局===================================================*/
 /*=====================================================公共部分====================================================*/
 @media (max-width:768px){
@@ -2132,19 +2188,34 @@ div{
     .carouselBg{
         margin-top:1.3rem;
         height: 3rem;
+        width: 100%;
         padding: 0;
     }
-    .carousel{
-        left: 0;
+    .data-carousel{
+        
         height: 3rem;
-        width: 80%;
+        width: 100%;
     }
-    .carousel img{
+    .data-carousel img{
         height: 3rem;
+        width: 100%;
         left:0;
+        border: none;
+        z-index: 1;
     }
     .carousel-li{
-        display: none;
+        left: 30%;
+        bottom: 0;
+    }
+    .carousel-li ul li{
+        display: block;
+        width: 0.2rem;
+        height: 0.2rem;
+        border-radius: 50%;
+        border: 1px solid black;
+        float: left;
+        margin-left: 0;
+        cursor: pointer;
     }
     /*=========================================内容============================================*/
     .today{
@@ -2295,6 +2366,11 @@ div{
         width: 100%;
         z-index: 99;
     }
+    .carousel{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
     #carouselId{
         margin: 0!important;
         padding: 0;
@@ -2303,6 +2379,17 @@ div{
     }
     .carousel-inner{
         margin: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    .item{
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 0;
+    }
+    .carousel-inner img{
         width: 100%;
         height: 100%;
     }
@@ -2605,5 +2692,8 @@ div{
         width: 100%;
         text-align: center;
         line-height: 1rem;
+    }
+    .person-history{
+        display: none;
     }
 }
