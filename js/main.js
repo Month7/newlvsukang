@@ -1,3 +1,4 @@
+
 //rem单位
 changeRootFont();
 function changeRootFont() {
@@ -368,10 +369,17 @@ $(function(){
         var xid=$(this).attr("xid");
         showProduct(xid);
     });
-    $item.mouseout(function(){
+    $("div.product").mouseover(function(){
+        $(this).show();
+    });
+    $("div.product").mouseleave(function(){
+        $(this).hide();
+    });
+    $item.mouseleave(function(){
         var xid=$(this).attr("xid");
         hideProduct(xid);
     });
+
     if($(".sortAll").length>0){
         (function(){
             var height=$(".mobie-bottom").css("height");
